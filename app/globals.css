@@ -28,3 +28,8 @@
   -webkit-mask-image: linear-gradient(to bottom, black 10%, transparent 95%);
   mask-image: linear-gradient(to bottom, black 10%, transparent 95%);
 }
+
+@keyframes fill {
+  from { width: 0 }
+  to { width: 100% }
+}
