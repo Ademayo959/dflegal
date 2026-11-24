@@ -2,18 +2,18 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Header from "@/components/Header";
 import image1 from "@/assets/image1.jpg";
-import image2 from "@/assets/image2.jpg";
-import image3 from "@/assets/image3.jpg";
-import image4 from "@/assets/image4.jpg";
+import image2 from "@/assets/image3.jpg";
+import image3 from "@/assets/image4.jpg";
+import image4 from "@/assets/image2.jpg";
 
 export const metadata: Metadata = { title: "Our team | DFLEGAL" };
 
 // Replace the names and titles; the photos come from the imports above.
 const team = [
-  { name: "Lawyer name", role: "Title", photo: image1 },
-  { name: "Lawyer name", role: "Title", photo: image2 },
-  { name: "Lawyer name", role: "Title", photo: image3 },
-  { name: "Lawyer name", role: "Title", photo: image4 },
+  { name: "Dayo Fasehun", role: "Managing Partner", photo: image1 },
+  { name: "Juliet Oguejiofor", role: "Partner", photo: image2 },
+  { name: "Abidemi M. Olowolagba", role: "Associate", photo: image3 },
+  { name: "Damilola Tosin Adeshote", role: "Operations & Accounts", photo: image4 },
 ];
 
 export default function TeamPage() {
@@ -38,8 +38,10 @@ export default function TeamPage() {
                   className="object-cover object-top"
                 />
               </div>
-              <h2 className="mt-3.5 text-xl font-medium">{m.name}</h2>
-              <p className="text-sm text-white/60">{m.role}</p>
+              <div className="">
+                <h2 className="mt-3.5 text-xl font-medium">{m.name}</h2>
+                <p className="text-sm text-white/60">{m.role}</p>
+              </div>
             </li>
           ))}
         </ul>

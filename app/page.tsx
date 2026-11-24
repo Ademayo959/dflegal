@@ -1,5 +1,5 @@
 import Image from "next/image";
-import bg from "@/assets/bg.jpg";
+import bg from "@/assets/bg.jpeg";
 import Header from "@/components/Header";
 import Testimonials from "@/components/Testimonials";
 
