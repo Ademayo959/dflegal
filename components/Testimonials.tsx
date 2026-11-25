@@ -2,11 +2,11 @@
 import { useState } from "react";
 
 const items = [
-  { q: "They handled our matter with professionalism and gave us exceptional results.", by: "A & O Holdings Limited" },
+  { q: "The firm handled our matter with professionalism and gave us exceptional results.", by: "A & O Holdings Limited" },
   { q: "They explained every step clearly and in plain language.", by: "M.K" },
-  { q: "They were consistently responsive and timely in all communications.", by: "Head of Legal, T & O" },
   { q: "They handled my matter with dedication and personal attention.", by: "Mr. O.S" },
   { q: "I have complete confidence in their legal expertise and integrity.", by: "Mrs. D.T" },
+  { q: "The firm guided us through Nigeria’s regulatory landscape. Approvals that once seemed uncertain were secured efficiently, allowing us to establish our operations without delay.", by: "General Counsel, T & O" },
 ];
 
 export default function Testimonials() {
