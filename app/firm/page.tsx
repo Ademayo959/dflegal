@@ -17,7 +17,7 @@ export default function FirmPage() {
 
         <div className="grid items-start gap-[clamp(32px,6vw,96px)] md:grid-cols-[7fr_5fr]">
           <div className="max-w-[56ch] text-white/65">
-            <p className="text-[clamp(22px,2.2vw,30px)] font-light leading-[1.35] tracking-[-0.01em] text-white">
+            <p className="mt-[1.6em]">
               Dayo Fasehun Legal Practitioners is a law firm built for clients who cannot afford uncertainty.
             </p>
 

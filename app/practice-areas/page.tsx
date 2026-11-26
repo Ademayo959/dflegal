@@ -5,7 +5,7 @@ import data from "@/assets/practice/data.jpeg";
 import corporate from "@/assets/practice/corporate.jpeg";
 import property from "@/assets/practice/property.jpeg";
 import regulatory from "@/assets/practice/regulatory.jpeg";
-import will from "@/assets/practice/will.jpeg";
+import will from "@/assets/practice/will2.png";
 import electricity from "@/assets/practice/electricity.jpeg";
 
 export const metadata: Metadata = { title: "Practice areas | DFLEGAL" };

@@ -2,19 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
-import photo from "@/assets/image3.jpg"; // correct this path
+import photo from "@/assets/image3.jpg";
 
 export const metadata: Metadata = { title: "Juliet Oguejiofor | DFLEGAL" };
-
-const highlights = [
-  { value: "US$45 million", label: "Repatriation secured for a pharmaceutical client" },
-  { value: "US$100 million", label: "M&A due diligence that uncovered hidden liabilities equal to 60% of the deal’s value" },
-];
-
-const qualifications = [
-  "MBA, Washington University in St. Louis (Olin)",
-  "Law degree, University of Lagos",
-];
 
 export default function JulietOguejioforPage() {
   return (
@@ -42,21 +32,11 @@ export default function JulietOguejioforPage() {
             <h1 className="text-[clamp(36px,5vw,72px)] font-light leading-[1.05] tracking-[-0.03em]">Juliet Oguejiofor</h1>
             <p className="mt-3 text-lg text-[#C9AA6B]">Partner</p>
 
-            <p className="mt-10 max-w-[44ch] text-[clamp(20px,1.8vw,24px)] font-light leading-[1.4]">
-              Juliet Oguejiofor is a Partner at Dayo Fasehun Legal Practitioners, trusted by boards and executives
-              on corporate governance, regulatory compliance and high-value commercial transactions.
-            </p>
-
-            <dl className="mt-12 grid gap-x-10 gap-y-8 sm:grid-cols-2">
-              {highlights.map((h) => (
-                <div key={h.value} className="border-t border-white/20 pt-4">
-                  <dt className="text-[clamp(30px,3.6vw,48px)] font-light leading-none tracking-[-0.02em]">{h.value}</dt>
-                  <dd className="mt-3 text-sm text-white/60">{h.label}</dd>
-                </div>
-              ))}
-            </dl>
-
-            <div className="mt-12 max-w-[60ch] space-y-[1.2em] text-white/70">
+            <div className="mt-10 max-w-[60ch] space-y-[1.2em] text-base leading-[1.7] text-white/70">
+              <p>
+                Juliet Oguejiofor is a Partner at Dayo Fasehun Legal Practitioners, trusted by boards and executives
+                on corporate governance, regulatory compliance and high-value commercial transactions.
+              </p>
               <p>
                 She led the team that secured the repatriation of US$45 million for a pharmaceutical client, and
                 headed due diligence on a US$100 million M&amp;A transaction, uncovering hidden liabilities equivalent
@@ -66,18 +46,11 @@ export default function JulietOguejioforPage() {
                 Juliet brings rare commercial insight to her counsel, advising not only on what the law requires,
                 but on what the business needs in order to grow.
               </p>
+              <p>
+                She holds an MBA from Washington University in St. Louis (Olin) and a law degree from the University
+                of Lagos.
+              </p>
             </div>
-
-            <section className="mt-12">
-              <h2 className="mb-3 text-sm text-white/60">Qualifications</h2>
-              <ul className="border-b border-white/20">
-                {qualifications.map((q) => (
-                  <li key={q} className="border-t border-white/20 py-3.5">
-                    {q}
-                  </li>
-                ))}
-              </ul>
-            </section>
           </div>
         </div>
       </main>

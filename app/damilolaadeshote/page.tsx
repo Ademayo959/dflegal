@@ -2,28 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
-import photo from "@/assets/image2.jpg"; // correct this path
+import photo from "@/assets/image2.jpg";
 
 export const metadata: Metadata = { title: "Damilola Tosin Adeshote | DFLEGAL" };
-
-const qualifications = ["B.Sc. (Hons) Accounting, University of Lagos", "ACCA member"];
-
-const experience = ["Nokia", "MainOne Cable (an Equinix company)", "3Consulting"];
-
-function List({ title, items }: { title: string; items: string[] }) {
-  return (
-    <section className="mt-12">
-      <h2 className="mb-3 text-sm text-white/60">{title}</h2>
-      <ul className="border-b border-white/20">
-        {items.map((item) => (
-          <li key={item} className="border-t border-white/20 py-3.5">
-            {item}
-          </li>
-        ))}
-      </ul>
-    </section>
-  );
-}
 
 export default function DamilolaAdeshotePage() {
   return (
@@ -53,21 +34,21 @@ export default function DamilolaAdeshotePage() {
             </h1>
             <p className="mt-3 text-lg text-[#C9AA6B]">Operations &amp; Accounts</p>
 
-            <p className="mt-10 max-w-[44ch] text-[clamp(20px,1.8vw,24px)] font-light leading-[1.4]">
-              Damilola Tosin Adeshote heads Operations and Accounts, bringing precision, discipline and financial
-              control to the firm’s day-to-day management.
-            </p>
-
-            <div className="mt-12 max-w-[60ch] space-y-[1.2em] text-white/70">
+            <div className="mt-10 max-w-[60ch] space-y-[1.2em] text-base leading-[1.7] text-white/70">
+              <p>
+                Damilola Tosin Adeshote heads Operations and Accounts, bringing precision, discipline and financial
+                control to the firm’s day-to-day management.
+              </p>
               <p>
                 She has built a distinguished career in finance operations, audit and compliance. She is recognised
                 for her accuracy, analytical rigour and ability to distil complex financial data into clear,
                 actionable insight.
               </p>
+              <p>
+                She holds a B.Sc. (Hons) in Accounting from the University of Lagos and is an ACCA member. She has
+                worked with Nokia, MainOne Cable (an Equinix company) and 3Consulting.
+              </p>
             </div>
-
-            <List title="Qualifications" items={qualifications} />
-            <List title="Experience" items={experience} />
           </div>
         </div>
       </main>

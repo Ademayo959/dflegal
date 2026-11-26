@@ -1,6 +1,8 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
+import logo from "@/assets/logo2.png"
 
 const links = [
   { href: "/firm", label: "Our firm" },
@@ -21,9 +23,12 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed inset-x-0 top-0 z-30 flex items-center justify-between px-5 py-[18px] md:px-14">
-        <Link href="/" aria-label="DFLEGAL home" className="text-[15px] font-semibold tracking-[0.28em]">
-          DFLEGAL
+      <header className="fixed inset-x-0 top-0 z-30 flex items-center justify-between px-5 py-[18px] md:px-14 bg-linear-to-b from-black/70 to-black/0">
+        <Link href="/" className="flex gap-2 items-center">
+          <Image src={logo} alt="logo " className="h-18 w-26 max-sm:h-10 max-sm:w-18" />
+          <Link href="/" aria-label="DFLEGAL home" className="text-[16px] font-semibold tracking-[0.28em] max-sm:text-[0.9rem]">
+            DAYO FASEHUN LEGAL PRACTITIONERS
+          </Link>
         </Link>
         <button
           onClick={() => setOpen((o) => !o)}
@@ -42,9 +47,8 @@ export default function Header() {
       <nav
         id="menu"
         aria-label="Main"
-        className={`fixed inset-0 z-20 flex flex-col items-end justify-center bg-[#0E0D0A]/[.97] px-6 transition-opacity duration-300 md:px-[8vw] ${
-          open ? "visible opacity-100" : "invisible opacity-0"
-        }`}
+        className={`fixed inset-0 z-20 flex flex-col items-end justify-center bg-[#0E0D0A]/[.97] px-6 transition-opacity duration-300 md:px-[8vw] ${open ? "visible opacity-100" : "invisible opacity-0"
+          }`}
       >
         {links.map((l) => (
           <Link
