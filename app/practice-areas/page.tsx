@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Header from "@/components/Header";
-import data from "@/assets/practice/data.jpeg";
-import corporate from "@/assets/practice/corporate.jpeg";
-import property from "@/assets/practice/property.jpeg";
-import regulatory from "@/assets/practice/regulatory.jpeg";
-import will from "@/assets/practice/will2.png";
-import electricity from "@/assets/practice/electricity.jpeg";
+import data from "@/assets/practice/data2.jpeg";
+import corporate from "@/assets/practice/corporate2.jpeg";
+import property from "@/assets/practice/property2.jpeg";
+import regulatory from "@/assets/practice/regulatory2.jpeg";
+import will from "@/assets/practice/will2.jpeg";
+import electricity from "@/assets/practice/electricity3.jpeg";
 
 export const metadata: Metadata = { title: "Practice areas | DFLEGAL" };
 
